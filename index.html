@@ -61,7 +61,7 @@ footer {
       const query = document.querySelector('input[name="q"]').value;
       if (query.trim() !== "") {
         event.preventDefault(); // prevent default submission
-        const newQuery = query + ' blah';
+        const newQuery = query + 'blah';
         form.action = `https://www.google.com/search?q=${encodeURIComponent(newQuery)}`;
         form.submit(); // submit with modified query
       }
